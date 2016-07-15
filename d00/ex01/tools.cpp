@@ -1,14 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   tools.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lnieto-m <lnieto-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/07/15 09:54:53 by lnieto-m          #+#    #+#             */
+/*   Updated: 2016/07/15 11:56:22 by lnieto-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "phonebook.hpp"
 
-int 	ft_strcmp(char s1[], char s2[])
+void	add(void)
 {
-	int 	i = 0;
+	Contact		inst;
+	std::string	input;
 
-	while (s1[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-			return 1;
-		i++;
-	}
-	return 0;
+	std::cout << "First Name : ";
+	std::cin >> input;
+	inst.SetFirstName(input);
+	std::cout << inst.GetFirstName() << std::endl;
 }

@@ -3,7 +3,8 @@ CC = clang++
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = main.cpp \
-		tools.cpp
+	   tools.cpp \
+	   ClassContact.cpp \
 
 NAME = phonebook
 

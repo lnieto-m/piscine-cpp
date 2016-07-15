@@ -2,8 +2,9 @@
 # define PHONEBOOK_HPP
 
 # include <iostream>
-# include "Class.Contact.hpp"
+# include "ClassContact.hpp"
+# include <string>
 
-int 	ft_strcmp(char s1[], char s2[]);
+void		add(void);
 
 #endif
